@@ -1,4 +1,14 @@
 import titlePhotoImport from "./photos/title-photo.jpg";
+import ios from "./photos/courses/iso.jpg";
+import reacte from "./photos/courses/react.jpg";
+import intPython from "./photos/courses/intro-python.jpg";
+import advPython from "./photos/courses/advan-python.jpg";
+import cybersecurity from "./photos/courses/cybersecurity.jpg";
+import tot from "./photos/courses/tot.jpg";
+import blockchain from "./photos/courses/blockchain.jpg";
+import devops from "./photos/courses/devops.jpg";
+import security from "./photos/courses/security.jpg";
+import { card } from "./cardFactory";
 
 function DomContent() {
   const containerSelect = document.querySelector(".site-container");
@@ -85,6 +95,67 @@ function DomContent() {
 
   paragraph.appendChild(paragraphText);
   paragraph.appendChild(paragraphLink);
+
+  // cards section
+  let courseTitleDiv = document.createElement("h1");
+  courseTitleDiv.classList.add("courses-title");
+  courseTitleDiv.textContent = "სასწავლო კურსები";
+  courses.appendChild(courseTitleDiv);
+
+  let isoCard = card(
+    ios,
+    "iOS Development",
+    "რეგისტრაცია დასრულებულია",
+    "კურსის დეტალები",
+  );
+  let reactCard = card(
+    reacte,
+    "Reacte",
+    "რეგისტრაცია დასრულებულია",
+    "კურსის დეტალები",
+  );
+  let intrPythonCard = card(
+    intPython,
+    "Intro to Python",
+    "რეგისტრაცია დასრულებულია",
+    "კურსის დეტალები",
+  );
+  let advancedPythonCard = card(
+    advPython,
+    "Advanced Python",
+    "რეგისტრაცია დასრულებულია",
+    "კურსის დეტალები",
+  );
+  let cybersecurityCard = card(
+    cybersecurity,
+    "Advanced Cybersecurity Course",
+    "რეგისტრაცია დასრულებულია",
+    "კურსის დეტალები",
+  );
+  let totCard = card(
+    tot,
+    "ToT - Training of Trainers",
+    "რეგისტრაცია დასრულებულია",
+    "კურსის დეტალები",
+  );
+  let BlockchainCard = card(
+    blockchain,
+    "Blockchain",
+    "რეგისტრაცია დასრულებულია",
+    "კურსის დეტალები",
+  );
+  let DevOpsCard = card(
+    devops,
+    "DevOps",
+    "რეგისტრაცია დასრულებულია",
+    "კურსის დეტალები",
+  );
+  let SecurityCard = card(
+    security,
+    "Information Security Governance",
+    "რეგისტრაცია დასრულებულია",
+    "კურსის დეტალები",
+  );
 }
 
 export { DomContent };
