@@ -1,4 +1,4 @@
-import titlePhotoImport from "./photos/title-photo.jpg";
+// import titlePhotoImport from "./photos/title-photo.jpg";
 import ios from "./photos/courses/iso.jpg";
 import reacte from "./photos/courses/react.jpg";
 import intPython from "./photos/courses/intro-python.jpg";
@@ -156,6 +156,8 @@ function DomContent() {
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
+
+  //footer section
 }
 
 export { DomContent };
