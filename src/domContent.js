@@ -9,6 +9,10 @@ import blockchain from "./photos/courses/blockchain.jpg";
 import devops from "./photos/courses/devops.jpg";
 import security from "./photos/courses/security.jpg";
 import { card } from "./cardFactory";
+import tbc from "./photos/footer/tbc.jpg";
+import fb from "./photos/footer/fb.jpg";
+import youtube from "./photos/footer/youtube.jpg";
+import tbcAcdLogo from "./photos/tbcAcdLogo.png";
 
 function DomContent() {
   const containerSelect = document.querySelector(".site-container");
@@ -44,8 +48,8 @@ function DomContent() {
   containerSelect.appendChild(footer);
 
   // dom header content
-  let logo = document.createElement("h1");
-  logo.textContent = "tbc x აკადემია";
+  let logo = new Image();
+  logo.src = tbcAcdLogo;
 
   let headerLinks = document.createElement("div");
   headerLinks.classList.add("header-links");
@@ -75,7 +79,7 @@ function DomContent() {
   // titlePhoto.src = titlePhotoImport;
 
   // title.appendChild(titlePhoto);
-
+  // image;
   let titleText = document.createElement("h1");
   titleText.textContent = "TBC x USAID";
 
@@ -101,6 +105,10 @@ function DomContent() {
   courseTitleDiv.classList.add("courses-title");
   courseTitleDiv.textContent = "სასწავლო კურსები";
   courses.appendChild(courseTitleDiv);
+
+  let courseCardDiv = document.createElement("div");
+  courseCardDiv.classList.add("course-cards");
+  courses.appendChild(courseCardDiv);
 
   let isoCard = card(
     ios,
@@ -158,6 +166,44 @@ function DomContent() {
   );
 
   //footer section
+  let footerTextDiv = document.createElement("div");
+  footerTextDiv.classList.add("footer-text");
+
+  let footerLogo = new Image();
+  footerLogo.src = tbc;
+
+  let footerText = document.createElement("p");
+  footerText.textContent = "© 2023 ყველა უფლება დაცულია";
+
+  let footerTextBtn = document.createElement("button");
+  footerTextBtn.textContent = "წესები და პირობები";
+
+  footerTextDiv.appendChild(footerLogo);
+  footerTextDiv.appendChild(footerText);
+  footerTextDiv.appendChild(footerTextBtn);
+
+  let footerLinksDiv = document.createElement("div");
+  footerLinksDiv.classList.add("footer-links");
+
+  let footerLinkSocDiv = document.createElement("div");
+
+  let fbLink = new Image();
+  fbLink.src = fb;
+
+  let youtubeLink = new Image();
+  youtubeLink.src = youtube;
+
+  let textUsBtn = document.createElement("button");
+  textUsBtn.textContent = "მოგვწერეთ";
+
+  footerLinkSocDiv.appendChild(fbLink);
+  footerLinkSocDiv.appendChild(youtubeLink);
+
+  footerLinksDiv.appendChild(footerLinkSocDiv);
+  footerLinksDiv.appendChild(textUsBtn);
+
+  footer.appendChild(footerTextDiv);
+  footer.appendChild(footerLinksDiv);
 }
 
 export { DomContent };

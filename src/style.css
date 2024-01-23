@@ -11,6 +11,7 @@
   --dark: rgb(26, 30, 31);
   --grey: rgb(43, 43, 43);
   --blue: rgb(0, 163, 224);
+  --black: rgb(22, 22, 22);
 }
 .header,
 .title-section,
@@ -24,6 +25,11 @@
   justify-content: space-between;
   background-color: var(--dark);
   color: var(--white);
+  height: 100px;
+}
+
+.header img {
+  height: 80px;
 }
 
 .header-links {
@@ -46,10 +52,14 @@
 .paragraph-section {
   background-color: var(--grey);
   color: var(--white);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .paragraph-section p {
   font-size: 28px;
   width: 900px;
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 button {
@@ -64,12 +74,47 @@ button:hover {
   color: var(--blue);
 }
 
-.paragraph-section button {
+.paragraph-section button,
+.course-cards button {
   color: var(--blue);
   font-size: 20px;
   font-weight: bolder;
 }
 
-.paragraph-section button:hover {
+.paragraph-section button:hover,
+.course-cards button:hover {
   color: rgb(47, 54, 255);
+}
+.courses-section {
+  background-color: var(--black);
+  color: var(--white);
+  display: grid;
+  justify-content: center;
+}
+.course-cards img {
+  width: 300px;
+}
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 414px);
+  gap: 50px;
+}
+
+.course-cards div {
+  outline: 0.5px solid var(--grey);
+  border-radius: 5px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  background-color: var(--grey);
+  color: var(--white);
+  height: 128px;
+  padding: 50px 0px 50px 0;
+}
+.footer-links {
+  display: grid;
 }

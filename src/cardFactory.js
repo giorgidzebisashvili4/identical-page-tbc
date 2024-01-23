@@ -1,5 +1,5 @@
 function card(image, title, status, button) {
-  const coursesDiv = document.querySelector(".courses-section");
+  const coursesDiv = document.querySelector(".course-cards");
   let cardDiv = document.createElement("div");
   cardDiv.classList.add("card");
   coursesDiv.appendChild(cardDiv);
