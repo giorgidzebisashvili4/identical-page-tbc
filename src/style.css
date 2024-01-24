@@ -12,6 +12,7 @@
   --grey: rgb(43, 43, 43);
   --blue: rgb(0, 163, 224);
   --black: rgb(22, 22, 22);
+  --course-card-corner: 5px;
 }
 .header,
 .title-section,
@@ -94,6 +95,8 @@ button:hover {
 }
 .course-cards img {
   width: 300px;
+  border-top-left-radius: var(--course-card-corner);
+  border-top-right-radius: var(--course-card-corner);
 }
 .course-cards {
   display: grid;
@@ -102,11 +105,18 @@ button:hover {
   gap: 50px;
 }
 
-.course-cards div {
+.course-cards > div {
   outline: 0.5px solid var(--grey);
-  border-radius: 5px;
+  border-radius: var(--course-card-corner);
 }
 
+.card {
+  display: grid;
+  justify-items: start;
+}
+.card button {
+  margin-bottom: 20px;
+}
 .footer {
   display: grid;
   grid-template-columns: repeat(2, auto);

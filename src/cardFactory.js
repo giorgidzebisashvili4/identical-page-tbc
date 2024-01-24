@@ -4,6 +4,8 @@ function card(image, title, status, button) {
   cardDiv.classList.add("card");
   coursesDiv.appendChild(cardDiv);
 
+  let cardContentDiv = document.createElement("div");
+
   let cardPhoto = new Image();
   cardPhoto.src = image;
   let cardTitle = document.createElement("h2");
@@ -13,9 +15,10 @@ function card(image, title, status, button) {
   let cardButton = document.createElement("button");
   cardButton.textContent = `${button}`;
 
-  cardDiv.appendChild(cardPhoto);
-  cardDiv.appendChild(cardTitle);
-  cardDiv.appendChild(cardStatus);
+  cardDiv.appendChild(cardContentDiv);
+  cardContentDiv.appendChild(cardPhoto);
+  cardContentDiv.appendChild(cardTitle);
+  cardContentDiv.appendChild(cardStatus);
   cardDiv.appendChild(cardButton);
 }
 
