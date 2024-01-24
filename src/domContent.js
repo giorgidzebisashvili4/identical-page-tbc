@@ -13,6 +13,8 @@ import tbc from "./photos/footer/tbc.jpg";
 import fb from "./photos/footer/fb.jpg";
 import youtube from "./photos/footer/youtube.jpg";
 import tbcAcdLogo from "./photos/tbcAcdLogo.png";
+import { questionsAndAnswers } from "./qaFactory";
+import questionIcon from "./photos/question-expend.svg";
 
 function DomContent() {
   const containerSelect = document.querySelector(".site-container");
@@ -163,6 +165,35 @@ function DomContent() {
     "Information Security Governance",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+  );
+  // question seqction
+
+  let questionTitleDiv = document.createElement("div");
+  questionTitleDiv.classList.add("question-title-div");
+  let questionTitle = document.createElement("h1");
+  questionTitle.textContent = "ხშირად დასმული კითხვები";
+
+  let questionTitleBtn = document.createElement("button");
+  questionTitleBtn.textContent = "ყველა კითხვა";
+
+  questions.appendChild(questionTitleDiv);
+  questionTitleDiv.appendChild(questionTitle);
+  questionTitleDiv.appendChild(questionTitleBtn);
+
+  let question1 = questionsAndAnswers(
+    "როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?",
+    questionIcon,
+    "კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:I ეტაპი - პირველ ეტაპზე საჭიროა, შეავსო სასურველი კურსისთვის განკუთვნილი სარეგისტრაციო ფორმა, რომელიც განთავსებულია კურსის შიდა გვერდზე. კურსზე რეგისტრაციის დასრულების შემდეგ დაიწყება შემოსული განცხადებების გადარჩევა. ",
+  );
+  let question2 = questionsAndAnswers(
+    "შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?",
+    questionIcon,
+    "answer",
+  );
+  let question3 = questionsAndAnswers(
+    "რა ღირს სწავლა პროგრამის ფარგლებში?",
+    questionIcon,
+    "answer",
   );
 
   //footer section
