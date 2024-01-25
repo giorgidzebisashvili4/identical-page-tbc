@@ -9,10 +9,10 @@ import blockchain from "./photos/courses/blockchain.jpg";
 import devops from "./photos/courses/devops.jpg";
 import security from "./photos/courses/security.jpg";
 import { card } from "./cardFactory";
-import tbc from "./photos/footer/tbc.jpg";
-import fb from "./photos/footer/fb.jpg";
-import youtube from "./photos/footer/youtube.jpg";
-import tbcAcdLogo from "./photos/tbcAcdLogo.png";
+import tbc from "./photos/footer/tbc.png";
+import fb from "./photos/footer/fb.png";
+import youtube from "./photos/footer/youtube.png";
+import tbcAcdLogo from "./photos/tbcAcdLogo.svg";
 import { questionsAndAnswers } from "./qaFactory";
 import questionIcon from "./photos/question-expend.svg";
 
