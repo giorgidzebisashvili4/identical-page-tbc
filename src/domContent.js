@@ -15,6 +15,16 @@ import youtube from "./photos/footer/youtube.png";
 import tbcAcdLogo from "./photos/tbcAcdLogo.svg";
 import { questionsAndAnswers } from "./qaFactory";
 import questionIcon from "./photos/question-expend.svg";
+import sliderIcon from "./photos/sliderIcon.svg";
+import sliderDot from "./photos/slider-dot.svg";
+import { slider } from "./sliderFunction";
+import slide1 from "./photos/partners/slid1.png";
+import slide2 from "./photos/partners/slid2.png";
+import slide3 from "./photos/partners/slid3.png";
+import slide4 from "./photos/partners/slid4.png";
+import slide5 from "./photos/partners/slid5.png";
+import slide6 from "./photos/partners/slid6.png";
+import slide7 from "./photos/partners/slid7.png";
 
 function DomContent() {
   const containerSelect = document.querySelector(".site-container");
@@ -107,7 +117,7 @@ function DomContent() {
   courseTitleDiv.classList.add("courses-title");
   courseTitleDiv.textContent = "სასწავლო კურსები";
   courses.appendChild(courseTitleDiv);
-
+  ("./photos/partners/slid1.png");
   let courseCardDiv = document.createElement("div");
   courseCardDiv.classList.add("course-cards");
   courses.appendChild(courseCardDiv);
@@ -166,7 +176,35 @@ function DomContent() {
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
-  // question seqction
+
+  // slider section
+
+  // Define image paths
+  const slid1 = new Image();
+  slid1.src = slide1;
+
+  const slid2 = new Image();
+  slid2.src = slide2;
+
+  const slid3 = new Image();
+  slid3.src = slide3;
+
+  const slid4 = new Image();
+  slid4.src = slide4;
+
+  const slid5 = new Image();
+  slid5.src = slide5;
+
+  const slid6 = new Image();
+  slid6.src = slide6;
+
+  const slid7 = new Image();
+  slid7.src = slide7;
+
+  const logos = [[slid1, slid2, slid3], [slid4, slid5, slid6], [slid7]];
+  slider(logos, sliderIcon, sliderDot);
+
+  // question section
 
   let questionTitleDiv = document.createElement("div");
   questionTitleDiv.classList.add("question-title-div");
