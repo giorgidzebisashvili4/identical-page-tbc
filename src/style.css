@@ -156,3 +156,7 @@ button:hover {
 .footer-links {
   display: grid;
 }
+
+#opened {
+  transform: rotate(180deg);
+}

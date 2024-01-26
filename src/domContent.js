@@ -188,12 +188,12 @@ function DomContent() {
   let question2 = questionsAndAnswers(
     "შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?",
     questionIcon,
-    "answer",
+    "TBC X USAID ტექნოლოგიური განათლებისთვის პროგრამაში თითოეულ კანდიდატს აქვს მხოლოდ ერთი კურსის გავლის შესაძლებლობა. გარდა Information Security და Python კურსებისა, სადაც Basic დონის გავლის შემდეგ შესაძლებელია სწავლის გაგრძელება Advance დონეზე.",
   );
   let question3 = questionsAndAnswers(
     "რა ღირს სწავლა პროგრამის ფარგლებში?",
     questionIcon,
-    "answer",
+    "პროგრამის ფარგლებში კურსებზე სწავლა სრულიად დაფინანსებულია თიბისი ბანკისა და USAID-ის მიერ.",
   );
 
   //footer section
