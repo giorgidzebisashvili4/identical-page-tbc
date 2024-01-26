@@ -16,7 +16,10 @@
 }
 .header,
 .title-section,
-.paragraph-section {
+.paragraph-section,
+.courses-section,
+.questions-section,
+.footer {
   padding: 0 150px 0 150px;
 }
 
@@ -32,7 +35,7 @@
 }
 
 .header img {
-  height: 80px;
+  height: 40px;
 }
 
 .header-links {
@@ -123,6 +126,7 @@ button:hover {
   color: var(--white);
   padding-top: 50px;
 }
+
 .questions-section h1 {
   margin-top: 0;
   margin-bottom: 0;
@@ -145,13 +149,15 @@ button:hover {
     brightness(113%) contrast(115%);
 }
 .footer {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: space-between;
   background-color: var(--grey);
   color: var(--white);
   height: 128px;
-  padding: 50px 0px 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .footer-links {
   display: grid;
@@ -159,4 +165,11 @@ button:hover {
 
 #opened {
   transform: rotate(180deg);
+}
+.question-space {
+  height: 15px;
+}
+
+.answer-paragraph-div {
+  margin: 50px 0px 50px 20px;
 }
