@@ -208,13 +208,17 @@ button:hover {
 }
 [class^="slider-div"] {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 70px;
   align-items: center;
   gap: 50px;
   transition: opacity 0.5s ease-in-out;
 }
 [class^="slider-div"] img {
   width: 200px;
+}
+.slider-div-2 img {
+  grid-column: 2 / 3;
 }
 
 .dot-Div {

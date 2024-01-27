@@ -30,7 +30,8 @@ function slider(logos, icon, dot, autoChangeInterval = 8000) {
 
   function sliderPage(n) {
     const sliderDiv = document.createElement("div");
-    sliderDiv.classList.add("slider-div");
+    sliderDiv.classList.add(`slider-div-${n}`);
+    sliderDiv.classList.add("slider-div"); // Adding a common class for styling
     sliderDisplayDiv.appendChild(sliderDiv);
 
     // Set initial opacity to 0 for fade-in effect
