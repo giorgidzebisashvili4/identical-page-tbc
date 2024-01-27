@@ -1,15 +1,15 @@
 function questionsAndAnswers(question, icon, answer) {
-  let questionSectionSelector = document.querySelector(".questions-section");
+  const questionSectionSelector = document.querySelector(".questions-section");
 
-  let questionDiv = document.createElement("div");
+  const questionDiv = document.createElement("div");
   questionDiv.classList.add("question-div");
 
-  let questionSubDiv = document.createElement("div");
+  const questionSubDiv = document.createElement("div");
   questionSubDiv.classList.add("question-sub-div");
 
-  let questionTitle = document.createElement("h3");
+  const questionTitle = document.createElement("h3");
   questionTitle.textContent = `${question}`;
-  let questionIcon = new Image();
+  const questionIcon = new Image();
   questionIcon.src = icon;
 
   questionSubDiv.appendChild(questionTitle);
@@ -27,20 +27,20 @@ function questionsAndAnswers(question, icon, answer) {
       // Answer is closed, create and append it
 
       if (answer !== "answer I") {
-        let questionAnswer = document.createElement("p");
+        const questionAnswer = document.createElement("p");
         questionAnswer.classList.add("answer-paragraph");
         questionAnswer.textContent = `${answer}`;
         questionDiv.appendChild(questionAnswer);
       } else {
         // adding firts long qestion paragraph
-        let questionAnswer = document.createElement("div");
+        const questionAnswer = document.createElement("div");
         questionAnswer.classList.add("answer-paragraph");
         questionDiv.appendChild(questionAnswer);
 
-        let questionAnswerDiv = document.createElement("div");
+        const questionAnswerDiv = document.createElement("div");
         questionAnswerDiv.classList.add("answer-paragraph-div");
 
-        let questionAnswertext = document.createElement("p");
+        const questionAnswertext = document.createElement("p");
         questionAnswertext.textContent = `ურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:`;
         questionAnswer.appendChild(questionAnswertext);
         questionAnswer.appendChild(questionAnswerDiv);
@@ -86,7 +86,7 @@ function questionsAndAnswers(question, icon, answer) {
           stage4,
         );
 
-        let questionAnswertext2 = document.createElement("p");
+        const questionAnswertext2 = document.createElement("p");
         questionAnswertext2.textContent = `* სანამ კურსზე დარეგისტრირდები მნიშვნელოვანია, ყურადღებით წაიკითხო კურსის აღწერა, ნახო რას ისწავლი კურსის განმავლობაში და გაიგო გააჩნია თუ არა კურსს დასწრების წინაპირობა.`;
         questionAnswer.appendChild(questionAnswertext2);
       }

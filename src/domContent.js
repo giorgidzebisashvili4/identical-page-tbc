@@ -30,25 +30,25 @@ function DomContent() {
   const containerSelect = document.querySelector(".site-container");
 
   // making main divs
-  let header = document.createElement("div");
+  const header = document.createElement("div");
   header.classList.add("header");
 
-  let title = document.createElement("div");
+  const title = document.createElement("div");
   title.classList.add("title-section");
 
-  let paragraph = document.createElement("div");
+  const paragraph = document.createElement("div");
   paragraph.classList.add("paragraph-section");
 
-  let courses = document.createElement("div");
+  const courses = document.createElement("div");
   courses.classList.add("courses-section");
 
-  let partners = document.createElement("div");
+  const partners = document.createElement("div");
   partners.classList.add("partners-section");
 
-  let questions = document.createElement("div");
+  const questions = document.createElement("div");
   questions.classList.add("questions-section");
 
-  let footer = document.createElement("div");
+  const footer = document.createElement("div");
   footer.classList.add("footer");
 
   containerSelect.appendChild(header);
@@ -60,25 +60,25 @@ function DomContent() {
   containerSelect.appendChild(footer);
 
   // dom header content
-  let logo = new Image();
+  const logo = new Image();
   logo.src = tbcAcdLogo;
 
-  let headerLinks = document.createElement("div");
+  const headerLinks = document.createElement("div");
   headerLinks.classList.add("header-links");
 
   header.appendChild(logo);
   header.appendChild(headerLinks);
 
-  let main = document.createElement("button");
+  const main = document.createElement("button");
   main.textContent = "მთავარი";
 
-  let tbcIt = document.createElement("button");
+  const tbcIt = document.createElement("button");
   tbcIt.textContent = "TBC IT";
 
-  let tbcXusaid = document.createElement("button");
+  const tbcXusaid = document.createElement("button");
   tbcXusaid.textContent = "TBC x USAID";
 
-  let risk = document.createElement("button");
+  const risk = document.createElement("button");
   risk.textContent = "რისკები";
 
   headerLinks.appendChild(main);
@@ -92,85 +92,85 @@ function DomContent() {
 
   // title.appendChild(titlePhoto);
   // image;
-  let titleText = document.createElement("h1");
+  const titleText = document.createElement("h1");
   titleText.textContent = "TBC x USAID";
 
-  let titleText2 = document.createElement("h2");
+  const titleText2 = document.createElement("h2");
   titleText2.textContent = "ტექნოლოგიური განათლებისთვის";
 
   title.appendChild(titleText);
   title.appendChild(titleText2);
 
   // paragraph section dom
-  let paragraphText = document.createElement("p");
+  const paragraphText = document.createElement("p");
   paragraphText.textContent =
     "„ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა  საინფორმაციო ტექნოლოგიებით დაინტერესებულ ადამიანებს გთავაზობთ სრულად დაფინანსებულ ონლაინ საგანმანათლებლო პრაქტიკულ კურსებს  სხვადასხვა ICT მიმართულებით. წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში.";
 
-  let paragraphLink = document.createElement("button");
+  const paragraphLink = document.createElement("button");
   paragraphLink.textContent = "გაიგე მეტი";
 
   paragraph.appendChild(paragraphText);
   paragraph.appendChild(paragraphLink);
 
   // cards section
-  let courseTitleDiv = document.createElement("h1");
+  const courseTitleDiv = document.createElement("h1");
   courseTitleDiv.classList.add("courses-title");
   courseTitleDiv.textContent = "სასწავლო კურსები";
   courses.appendChild(courseTitleDiv);
   ("./photos/partners/slid1.png");
-  let courseCardDiv = document.createElement("div");
+  const courseCardDiv = document.createElement("div");
   courseCardDiv.classList.add("course-cards");
   courses.appendChild(courseCardDiv);
 
-  let isoCard = card(
+  const isoCard = card(
     ios,
     "iOS Development",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
-  let reactCard = card(
+  const reactCard = card(
     reacte,
     "Reacte",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
-  let intrPythonCard = card(
+  const intrPythonCard = card(
     intPython,
     "Intro to Python",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
-  let advancedPythonCard = card(
+  const advancedPythonCard = card(
     advPython,
     "Advanced Python",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
-  let cybersecurityCard = card(
+  const cybersecurityCard = card(
     cybersecurity,
     "Advanced Cybersecurity Course",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
-  let totCard = card(
+  const totCard = card(
     tot,
     "ToT - Training of Trainers",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
-  let BlockchainCard = card(
+  const BlockchainCard = card(
     blockchain,
     "Blockchain",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
-  let DevOpsCard = card(
+  const DevOpsCard = card(
     devops,
     "DevOps",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
   );
-  let SecurityCard = card(
+  const SecurityCard = card(
     security,
     "Information Security Governance",
     "რეგისტრაცია დასრულებულია",
@@ -206,64 +206,64 @@ function DomContent() {
 
   // question section
 
-  let questionTitleDiv = document.createElement("div");
+  const questionTitleDiv = document.createElement("div");
   questionTitleDiv.classList.add("question-title-div");
-  let questionTitle = document.createElement("h1");
+  const questionTitle = document.createElement("h1");
   questionTitle.textContent = "ხშირად დასმული კითხვები";
 
-  let questionTitleBtn = document.createElement("button");
+  const questionTitleBtn = document.createElement("button");
   questionTitleBtn.textContent = "ყველა კითხვა";
 
   questions.appendChild(questionTitleDiv);
   questionTitleDiv.appendChild(questionTitle);
   questionTitleDiv.appendChild(questionTitleBtn);
 
-  let question1 = questionsAndAnswers(
+  const question1 = questionsAndAnswers(
     "როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?",
     questionIcon,
     "answer I",
   );
 
-  let question2 = questionsAndAnswers(
+  const question2 = questionsAndAnswers(
     "შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?",
     questionIcon,
     "TBC X USAID ტექნოლოგიური განათლებისთვის პროგრამაში თითოეულ კანდიდატს აქვს მხოლოდ ერთი კურსის გავლის შესაძლებლობა. გარდა Information Security და Python კურსებისა, სადაც Basic დონის გავლის შემდეგ შესაძლებელია სწავლის გაგრძელება Advance დონეზე.",
   );
-  let question3 = questionsAndAnswers(
+  const question3 = questionsAndAnswers(
     "რა ღირს სწავლა პროგრამის ფარგლებში?",
     questionIcon,
     "პროგრამის ფარგლებში კურსებზე სწავლა სრულიად დაფინანსებულია თიბისი ბანკისა და USAID-ის მიერ.",
   );
 
-  //footer section
-  let footerTextDiv = document.createElement("div");
+  // footer section
+  const footerTextDiv = document.createElement("div");
   footerTextDiv.classList.add("footer-text");
 
-  let footerLogo = new Image();
+  const footerLogo = new Image();
   footerLogo.src = tbc;
 
-  let footerText = document.createElement("p");
+  const footerText = document.createElement("p");
   footerText.textContent = "© 2023 ყველა უფლება დაცულია";
 
-  let footerTextBtn = document.createElement("button");
+  const footerTextBtn = document.createElement("button");
   footerTextBtn.textContent = "წესები და პირობები";
 
   footerTextDiv.appendChild(footerLogo);
   footerTextDiv.appendChild(footerText);
   footerTextDiv.appendChild(footerTextBtn);
 
-  let footerLinksDiv = document.createElement("div");
+  const footerLinksDiv = document.createElement("div");
   footerLinksDiv.classList.add("footer-links");
 
-  let footerLinkSocDiv = document.createElement("div");
+  const footerLinkSocDiv = document.createElement("div");
 
-  let fbLink = new Image();
+  const fbLink = new Image();
   fbLink.src = fb;
 
-  let youtubeLink = new Image();
+  const youtubeLink = new Image();
   youtubeLink.src = youtube;
 
-  let textUsBtn = document.createElement("button");
+  const textUsBtn = document.createElement("button");
   textUsBtn.textContent = "მოგვწერეთ";
 
   footerLinkSocDiv.appendChild(fbLink);
