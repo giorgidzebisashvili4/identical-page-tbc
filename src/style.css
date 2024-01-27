@@ -197,9 +197,13 @@ button:hover {
   font-family: "regular";
   font-size: 25px;
 }
+.question-title-div button:hover {
+  color: gray;
+}
 .question-div {
   border-bottom: 1px solid rgba(255, 255, 255, 0.135);
 }
+
 .question-div img,
 .slider-btn-left,
 .slider-btn-right,
