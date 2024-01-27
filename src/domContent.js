@@ -218,7 +218,7 @@ function DomContent() {
 
   const questionTitleDiv = document.createElement("div");
   questionTitleDiv.classList.add("question-title-div");
-  const questionTitle = document.createElement("h1");
+  const questionTitle = document.createElement("p");
   questionTitle.textContent = "ხშირად დასმული კითხვები";
 
   const questionTitleBtn = document.createElement("button");

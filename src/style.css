@@ -15,7 +15,7 @@
 }
 
 :root {
-  --white: white;
+  --white: rgb(224, 224, 224);
   --dark: rgb(26, 30, 31);
   --grey: rgb(43, 43, 43);
   --blue: rgb(0, 163, 224);
@@ -87,13 +87,15 @@ button {
   border: none;
   text-decoration: none;
   background-color: transparent;
+  padding: 0;
 }
 
 button:hover {
   color: var(--blue);
 }
 
-.paragraph-section button {
+.paragraph-section button,
+.question-title-div button {
   color: var(--blue);
   font-size: 20px;
   font-weight: bolder;
@@ -109,6 +111,7 @@ button:hover {
   display: grid;
   justify-content: center;
   padding-top: 30px;
+  padding-bottom: 70px;
 }
 .courses-section > span,
 .partner-title {
@@ -175,24 +178,27 @@ button:hover {
   background-color: var(--black);
   color: var(--white);
   padding-top: 50px;
+  padding-bottom: 70px;
 }
 
-.questions-section h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .question-title-div {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: space-between;
   align-items: center;
 }
 .question-sub-div {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: space-between;
   align-items: center;
 }
+.question-title-div > p {
+  font-family: "regular";
+  font-size: 25px;
+}
 .question-div {
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.135);
 }
 .question-div img,
 .slider-btn-left,
@@ -201,19 +207,55 @@ button:hover {
   filter: invert(100%) sepia(0%) saturate(7439%) hue-rotate(105deg)
     brightness(113%) contrast(115%);
 }
+.question-sub-div > p {
+  font-family: "regular";
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.answer-paragraph {
+  font-family: "regular";
+  line-height: 1.7;
+}
+
+/* footer section */
 .footer {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: space-between;
-  background-color: var(--grey);
+  background-color: rgb(33, 33, 33);
   color: var(--white);
   height: 128px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.footer button {
+  color: var(--white);
+}
+.footer button:hover {
+  color: gray;
+}
 .footer-links {
   display: grid;
+  justify-items: end;
+  gap: 15px;
+}
+.footer-links > div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 15px;
+}
+.footer-links > button {
+  padding: 7px 32px;
+  background-color: var(--blue);
+  border-radius: 4px;
+  font-family: "regular";
+  font-size: 17px;
+  color: var(--white);
+}
+.footer-links > button:hover {
+  background-color: rgb(187, 187, 187);
+  color: rgb(46, 46, 46);
 }
 
 #opened {
@@ -256,7 +298,7 @@ button:hover {
 .slider-btn-right {
   height: 34px;
 }
-[class^="slider-div"] {
+butt [class^="slider-div"] {
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: 70px;

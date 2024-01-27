@@ -7,7 +7,7 @@ function questionsAndAnswers(question, icon, answer) {
   const questionSubDiv = document.createElement("div");
   questionSubDiv.classList.add("question-sub-div");
 
-  const questionTitle = document.createElement("h3");
+  const questionTitle = document.createElement("p");
   questionTitle.textContent = `${question}`;
   const questionIcon = new Image();
   questionIcon.src = icon;
@@ -41,7 +41,7 @@ function questionsAndAnswers(question, icon, answer) {
         questionAnswerDiv.classList.add("answer-paragraph-div");
 
         const questionAnswertext = document.createElement("p");
-        questionAnswertext.textContent = `ურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:`;
+        questionAnswertext.textContent = `კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:`;
         questionAnswer.appendChild(questionAnswertext);
         questionAnswer.appendChild(questionAnswerDiv);
 
