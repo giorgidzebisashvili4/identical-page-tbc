@@ -9,7 +9,7 @@ function slider(logos, icon, dot, autoChangeInterval = 8000) {
   sliderBtnRight.src = icon;
   sliderBtnRight.classList.add("slider-btn-right");
 
-  const title = document.createElement("h1");
+  const title = document.createElement("p");
   title.classList.add("partner-title");
   title.textContent = "პროექტის პარტნიორები";
 

@@ -46,6 +46,9 @@
 .header img {
   height: 40px;
 }
+.header button {
+  color: var(--white);
+}
 
 .header-links {
   display: flex;
@@ -84,24 +87,21 @@ button {
   border: none;
   text-decoration: none;
   background-color: transparent;
-  color: var(--white);
-  font-family: "regular-bold";
 }
 
 button:hover {
   color: var(--blue);
 }
 
-.paragraph-section button,
-.course-cards button {
+.paragraph-section button {
   color: var(--blue);
   font-size: 20px;
   font-weight: bolder;
+  font-family: "regular-bold";
 }
 
-.paragraph-section button:hover,
-.course-cards button:hover {
-  color: rgb(47, 54, 255);
+.paragraph-section button:hover {
+  color: rgb(117, 117, 117);
 }
 .courses-section {
   background-color: var(--black);
@@ -110,12 +110,13 @@ button:hover {
   justify-content: center;
   padding-top: 30px;
 }
-.courses-section > span {
+.courses-section > span,
+.partner-title {
   font-family: "regular";
   font-size: 25px;
   padding-bottom: 50px;
 }
-.course-cards img {
+.card-photo {
   width: 300px;
   border-top-left-radius: var(--course-card-corner);
   border-top-right-radius: var(--course-card-corner);
@@ -149,8 +150,25 @@ button:hover {
 .card > div > p {
   margin-left: 20px;
 }
-.card button {
-  margin-bottom: 20px;
+.card-btn-section {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 15px 190px;
+  align-items: center;
+}
+.card-btn-section > button {
+  color: var(--blue);
+  transition-duration: 0.4s;
+  border: none;
+  text-decoration: none;
+  font-family: "regular-bold";
+  font-size: 16px;
+}
+.card-btn-section > button:hover {
+  color: rgb(71, 125, 200);
+}
+.card-btn-section > img {
+  height: 15px;
 }
 
 .questions-section {
@@ -213,6 +231,7 @@ button:hover {
 .partners-section {
   background-color: var(--grey);
   height: 250px;
+  padding-bottom: 40px;
 }
 .partners-display {
   display: grid;
@@ -235,7 +254,7 @@ button:hover {
 
 .slider-btn-left,
 .slider-btn-right {
-  height: 50px;
+  height: 34px;
 }
 [class^="slider-div"] {
   display: grid;
@@ -257,6 +276,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 15px;
+  margin-top: 25px;
 }
 
 .partner-title {

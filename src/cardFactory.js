@@ -8,6 +8,7 @@ function card(image, title, status, button, icon) {
 
   const cardPhoto = new Image();
   cardPhoto.src = image;
+  cardPhoto.classList.add("card-photo");
 
   const cardBtnIcon = new Image();
   cardBtnIcon.src = icon;
@@ -22,12 +23,17 @@ function card(image, title, status, button, icon) {
   const cardButton = document.createElement("button");
   cardButton.textContent = `${button}`;
 
+  const cardBtnDiv = document.createElement("div");
+  cardBtnDiv.classList.add("card-btn-section");
+
   cardDiv.appendChild(cardContentDiv);
   cardContentDiv.appendChild(cardPhoto);
   cardContentDiv.appendChild(cardTitle);
   cardContentDiv.appendChild(cardStatus);
-  cardDiv.appendChild(cardButton);
-  cardDiv.appendChild(cardBtnIcon);
+
+  cardDiv.appendChild(cardBtnDiv);
+  cardBtnDiv.appendChild(cardBtnIcon);
+  cardBtnDiv.appendChild(cardButton);
 }
 
 export { card };
