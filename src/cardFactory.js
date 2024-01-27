@@ -1,18 +1,25 @@
-function card(image, title, status, button) {
+function card(image, title, status, button, icon) {
   const coursesDiv = document.querySelector(".course-cards");
-  let cardDiv = document.createElement("div");
+  const cardDiv = document.createElement("div");
   cardDiv.classList.add("card");
   coursesDiv.appendChild(cardDiv);
 
-  let cardContentDiv = document.createElement("div");
+  const cardContentDiv = document.createElement("div");
 
-  let cardPhoto = new Image();
+  const cardPhoto = new Image();
   cardPhoto.src = image;
-  let cardTitle = document.createElement("h2");
+
+  const cardBtnIcon = new Image();
+  cardBtnIcon.src = icon;
+
+  const cardTitle = document.createElement("p");
+  cardTitle.classList.add("card-title");
   cardTitle.textContent = `${title}`;
-  let cardStatus = document.createElement("h3");
+  const cardStatus = document.createElement("p");
+  cardStatus.classList.add("card-status");
   cardStatus.textContent = `${status}`;
-  let cardButton = document.createElement("button");
+
+  const cardButton = document.createElement("button");
   cardButton.textContent = `${button}`;
 
   cardDiv.appendChild(cardContentDiv);
@@ -20,6 +27,7 @@ function card(image, title, status, button) {
   cardContentDiv.appendChild(cardTitle);
   cardContentDiv.appendChild(cardStatus);
   cardDiv.appendChild(cardButton);
+  cardDiv.appendChild(cardBtnIcon);
 }
 
 export { card };

@@ -8,6 +8,7 @@ import tot from "./photos/courses/tot.jpg";
 import blockchain from "./photos/courses/blockchain.jpg";
 import devops from "./photos/courses/devops.jpg";
 import security from "./photos/courses/security.jpg";
+import cardIcon from "./photos/card-btn-icon.svg";
 import { card } from "./cardFactory";
 import tbc from "./photos/footer/tbc.png";
 import fb from "./photos/footer/fb.png";
@@ -113,7 +114,7 @@ function DomContent() {
   paragraph.appendChild(paragraphLink);
 
   // cards section
-  const courseTitleDiv = document.createElement("h1");
+  const courseTitleDiv = document.createElement("span");
   courseTitleDiv.classList.add("courses-title");
   courseTitleDiv.textContent = "სასწავლო კურსები";
   courses.appendChild(courseTitleDiv);
@@ -127,54 +128,63 @@ function DomContent() {
     "iOS Development",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+    cardIcon,
   );
   const reactCard = card(
     reacte,
     "Reacte",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+    cardIcon,
   );
   const intrPythonCard = card(
     intPython,
     "Intro to Python",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+    cardIcon,
   );
   const advancedPythonCard = card(
     advPython,
     "Advanced Python",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+    cardIcon,
   );
   const cybersecurityCard = card(
     cybersecurity,
     "Advanced Cybersecurity Course",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+    cardIcon,
   );
   const totCard = card(
     tot,
     "ToT - Training of Trainers",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+    cardIcon,
   );
   const BlockchainCard = card(
     blockchain,
     "Blockchain",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+    cardIcon,
   );
   const DevOpsCard = card(
     devops,
     "DevOps",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+    cardIcon,
   );
   const SecurityCard = card(
     security,
     "Information Security Governance",
     "რეგისტრაცია დასრულებულია",
     "კურსის დეტალები",
+    cardIcon,
   );
 
   // slider section
