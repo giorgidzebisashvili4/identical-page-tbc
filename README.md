@@ -8,7 +8,7 @@ just click to see [Live Demo](https://giorgidzebisashvili4.github.io/identical-p
 
 If you downloaded and want to make changes:
 
-- index.html file is in dist folder
+- Open `./dist/index.html` file with browser.
 - To display automatically changes you made, use
 
 ```bash
