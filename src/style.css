@@ -13,6 +13,11 @@
   font-family: "regular";
   src: url("./fonts/tbc-regular.woff2") format("woff2");
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   --white: rgb(224, 224, 224);
@@ -23,15 +28,6 @@
   --course-card-corner: 5px;
   --width: 980px;
 }
-/* .header,
-.title-section,
-.paragraph-section,
-.courses-section,
-.partners-section,
-.questions-section,
-.footer {
-  padding: 0 150px 0 150px;
-} */
 
 .header {
   display: grid;
@@ -73,7 +69,11 @@
   background-size: cover;
   background-position: center;
   font-family: "bold";
-  font-size: 25px;
+  font-size: 40px;
+}
+.title-section p {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .paragraph-section {

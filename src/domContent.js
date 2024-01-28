@@ -94,10 +94,10 @@ function DomContent() {
 
   // title.appendChild(titlePhoto);
   // image;
-  const titleText = document.createElement("h1");
+  const titleText = document.createElement("p");
   titleText.textContent = "TBC x USAID";
 
-  const titleText2 = document.createElement("h2");
+  const titleText2 = document.createElement("p");
   titleText2.textContent = "ტექნოლოგიური განათლებისთვის";
 
   title.appendChild(titleText);
