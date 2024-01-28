@@ -88,12 +88,6 @@ function DomContent() {
   headerLinks.appendChild(tbcXusaid);
   headerLinks.appendChild(risk);
 
-  // title section dom
-  // const titlePhoto = new Image();
-  // titlePhoto.src = titlePhotoImport;
-
-  // title.appendChild(titlePhoto);
-  // image;
   const titleText = document.createElement("p");
   titleText.textContent = "TBC x USAID";
 
