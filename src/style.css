@@ -219,6 +219,9 @@ button:hover {
 .answer-paragraph {
   font-family: "regular";
   line-height: 1.7;
+  max-height: auto;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
 }
 
 /* footer section */
@@ -302,7 +305,7 @@ button:hover {
 .slider-btn-right {
   height: 34px;
 }
-butt [class^="slider-div"] {
+.slider-div {
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: 70px;
@@ -310,7 +313,7 @@ butt [class^="slider-div"] {
   gap: 50px;
   transition: opacity 0.5s ease-in-out;
 }
-[class^="slider-div"] img {
+.slider-div img {
   width: 200px;
 }
 .slider-div-2 img {

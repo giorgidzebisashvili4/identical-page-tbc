@@ -19,11 +19,19 @@ function questionsAndAnswers(question, icon, answer) {
 
   // giving button function to open and close answers
   let answerOpen = false; // Variable to track answer state
+  let answerRemoved = false;
 
-  questionIcon.addEventListener("click", (e) => {
-    const answerParagraph = document.querySelector(".answer-paragraph");
-
-    if (!answerOpen) {
+  questionSubDiv.addEventListener("click", () => {
+    // eslint-disable-next-line prefer-const
+    let answerParagraph = document.querySelector(".answer-paragraph");
+    if (answerParagraph !== null) {
+      console.log(answerParagraph);
+      answerParagraph.remove();
+      answerRemoved = true;
+    }
+    console.log(answerOpen);
+    console.log(answerParagraph);
+    if (!answerOpen || answerParagraph === null) {
       // Answer is closed, create and append it
 
       if (answer !== "answer I") {
@@ -41,7 +49,8 @@ function questionsAndAnswers(question, icon, answer) {
         questionAnswerDiv.classList.add("answer-paragraph-div");
 
         const questionAnswertext = document.createElement("p");
-        questionAnswertext.textContent = `კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:`;
+        questionAnswertext.textContent =
+          "კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:";
         questionAnswer.appendChild(questionAnswertext);
         questionAnswer.appendChild(questionAnswerDiv);
 
@@ -87,16 +96,22 @@ function questionsAndAnswers(question, icon, answer) {
         );
 
         const questionAnswertext2 = document.createElement("p");
-        questionAnswertext2.textContent = `* სანამ კურსზე დარეგისტრირდები მნიშვნელოვანია, ყურადღებით წაიკითხო კურსის აღწერა, ნახო რას ისწავლი კურსის განმავლობაში და გაიგო გააჩნია თუ არა კურსს დასწრების წინაპირობა.`;
+        questionAnswertext2.textContent =
+          "* სანამ კურსზე დარეგისტრირდები მნიშვნელოვანია, ყურადღებით წაიკითხო კურსის აღწერა, ნახო რას ისწავლი კურსის განმავლობაში და გაიგო გააჩნია თუ არა კურსს დასწრების წინაპირობა.";
         questionAnswer.appendChild(questionAnswertext2);
       }
 
-      e.target.id = "opened";
+      questionIcon.id = "opened";
       answerOpen = true; // Set answer state to open
     } else {
+      const answerParagraph = document.querySelector(".answer-paragraph");
       // Answer is open, remove it
-      e.target.id = "";
-      questionDiv.removeChild(answerParagraph);
+      questionIcon.id = "";
+      if (answerParagraph !== null) {
+        answerParagraph.remove();
+      }
+      console.log(questionDiv);
+      console.log(answerParagraph);
       answerOpen = false; // Set answer state to closed
     }
   });
