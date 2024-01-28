@@ -78,6 +78,7 @@ function DomContent() {
 
   const tbcXusaid = document.createElement("button");
   tbcXusaid.textContent = "TBC x USAID";
+  tbcXusaid.id = "selectid-menu";
 
   const risk = document.createElement("button");
   risk.textContent = "რისკები";
