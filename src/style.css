@@ -19,6 +19,12 @@ body {
   padding: 0;
 }
 
+button:hover,
+.question-div:hover,
+.footer img:hover,
+.header img:hover {
+  cursor: pointer;
+}
 :root {
   --white: rgb(224, 224, 224);
   --dark: rgb(26, 30, 31);
