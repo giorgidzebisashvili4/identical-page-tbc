@@ -193,6 +193,9 @@ button:hover {
   color: var(--white);
   padding-top: 50px;
   padding-bottom: 70px;
+  display: grid;
+  grid-template-columns: var(--width);
+  justify-content: center;
 }
 
 .question-title-div {
@@ -242,8 +245,8 @@ button:hover {
 .footer {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: space-between;
+  grid-template-columns: repeat(2, 490px);
+  justify-content: center;
   background-color: rgb(33, 33, 33);
   color: var(--white);
   height: 128px;
@@ -259,7 +262,7 @@ button:hover {
 .footer-links {
   display: grid;
   justify-items: end;
-  gap: 15px;
+  gap: 25px;
 }
 .footer-links > div {
   display: grid;
